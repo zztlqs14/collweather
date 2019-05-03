@@ -1,3 +1,8 @@
-# collweather
+# 酷奥天气
+# 本项目使用：
+# LitePal数据库封装库
+# OkHttp网络请求
+# gson解析数据
+# Glide加载库
 
 <h>2019.5.3更新了天气地点选择</h1>
