@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nested_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:fillViewport="true"
+    android:tag="@string/change_theme_need_refresh_flag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:tag="@string/change_theme_need_refresh_flag"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_android_links"
+            android:textColor="?attr/textColor"
+            android:text="二维码生成器"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:tag="@string/change_theme_need_refresh_flag"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_android_zhinanzheng"
+            android:textColor="?attr/textColor"
+            android:text="指南针"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:tag="@string/change_theme_need_refresh_flag"
+                android:text="主题风格"
+                android:textColor="?attr/textColor" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_compat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:paddingLeft="20dp"
+                android:tag="@string/change_theme_need_refresh_flag"
+                android:text="日间   "
+                android:textColor="?attr/textColor" />
+        </FrameLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
